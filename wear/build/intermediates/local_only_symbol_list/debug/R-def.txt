@@ -1,0 +1,19 @@
+R_DEF: Internal format may change without notice
+local
+drawable tile_preview
+id data_label
+id home_label
+id inference
+id ppg_red_flush
+id ppg_red_start
+id ppg_red_stop
+layout dsds
+layout main
+mipmap ic_launcher
+string app_name
+string complication_label
+string hello_world
+string home_label
+string tile_label
+string title_activity_main
+string title_activity_presentation._main

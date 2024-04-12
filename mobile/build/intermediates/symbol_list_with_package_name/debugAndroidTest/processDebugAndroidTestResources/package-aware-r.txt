@@ -1,0 +1,3 @@
+com.cgcworks.ppgpal.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

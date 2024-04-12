@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wearable_capability package="com.cgcworks.ppgpal">
+    <capabilities>
+        <capability name="ppg_receive" />
+    </capabilities>
+</wearable_capability>

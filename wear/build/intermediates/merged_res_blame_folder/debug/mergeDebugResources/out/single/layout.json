@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\Connor\\.gradle\\daemon\\8.4\\com.cgcworks.ppgpal.wear-mergeDebugResources-82:\\layout\\main.xml",
+        "source": "C:\\Users\\Connor\\.gradle\\daemon\\8.4\\com.cgcworks.ppgpal.wear-main-85:\\layout\\main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Connor\\.gradle\\daemon\\8.4\\com.cgcworks.ppgpal.wear-mergeDebugResources-82:\\layout\\dsds.xml",
+        "source": "C:\\Users\\Connor\\.gradle\\daemon\\8.4\\com.cgcworks.ppgpal.wear-main-85:\\layout\\dsds.xml"
+    },
+    {
+        "merged": "com.cgcworks.ppgpal.wear-mergeDebugResources-82:/layout/main.xml",
+        "source": "com.cgcworks.ppgpal.wear-main-85:/layout/main.xml"
+    }
+]

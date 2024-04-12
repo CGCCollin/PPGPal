@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.cgcworks.ppgpal.mobile-mergeDebugResources-31:/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\tacotortilla\\.gradle\\caches\\transforms-3\\527dae1ae0a8e438a6654c37e7552e99\\transformed\\appcompat-1.6.1\\res\\values-port\\values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}
