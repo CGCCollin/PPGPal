@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Environment
 import android.util.Log
 import kotlin.coroutines.*
-import com.cgcworks.ppgpal.Activities.MainActivity
 import com.cgcworks.ppgpal.datatstructs.Accelerometer
 import com.cgcworks.ppgpal.datatstructs.PPGGreen
 import com.cgcworks.ppgpal.datatstructs.PPGRed
@@ -19,9 +18,8 @@ import java.io.File
 
 class PPGListenerService: WearableListenerService() {
 
-
-
     private fun broadcastData(action: String, data: String) {
+        Log.d(TAG, "Broadcasting data with action: $action, data: $data")
         val intent = Intent(action)
         intent.putExtra("data", data)
         sendBroadcast(intent)
@@ -58,10 +56,10 @@ class PPGListenerService: WearableListenerService() {
         val objects = input.split(";")
         objects.forEach {
             try{
-            val parts = it.split(",")
-            val ppgGreen = PPGGreen(parts[0].toLong(), parts[1].toInt())
-            jsonArray.put(JSONObject().put("timestamp", ppgGreen.getTimestamp()).put("green", ppgGreen.getPPG()))
-                }catch (e: Exception){
+                val parts = it.split(",")
+                val ppgGreen = PPGGreen(parts[0].toLong(), parts[1].toInt())
+                jsonArray.put(JSONObject().put("timestamp", ppgGreen.getTimestamp()).put("green", ppgGreen.getPPG()))
+            }catch (e: Exception){
                 Log.e(TAG, "Failed to parse PPGGreen", e)
             }
         }
@@ -85,7 +83,6 @@ class PPGListenerService: WearableListenerService() {
         }
         return jsonArray.toString()
     }
-
 
     fun jsonifyAccelerometer(input: String): String {
         val jsonArray = JSONArray()
@@ -141,7 +138,6 @@ class PPGListenerService: WearableListenerService() {
     }
 
     companion object {
-        private const val MESSAGE_PATH = "/PPG_DATA"
         private const val TAG = "PPGListenerService"
         private const val PPG_GREEN_PATH = "/PPG_GREEN"
         private const val PPG_RED_PATH = "/PPG_RED"
@@ -156,5 +152,4 @@ class PPGListenerService: WearableListenerService() {
         private val WRITE_EXTERNAL_STORAGE_PATH = Environment.getExternalStoragePublicDirectory(
             Environment.DIRECTORY_DOCUMENTS)
     }
-
 }

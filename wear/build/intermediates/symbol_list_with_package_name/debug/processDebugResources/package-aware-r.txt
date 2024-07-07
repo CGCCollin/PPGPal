@@ -1505,8 +1505,6 @@ id percent
 id pooling_container_listener_holder_tag
 id position
 id postLayout
-id ppg_green_label
-id ppg_red_label
 id progress_circular
 id progress_horizontal
 id radio
@@ -1566,6 +1564,7 @@ id startHorizontal
 id startVertical
 id staticLayout
 id staticPostLayout
+id status
 id status_bar_latest_event_content
 id stop
 id submenuarrow

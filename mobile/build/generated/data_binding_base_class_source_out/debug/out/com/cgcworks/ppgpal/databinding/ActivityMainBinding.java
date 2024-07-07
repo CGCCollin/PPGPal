@@ -21,6 +21,9 @@ public final class ActivityMainBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final TextView Title;
+
+  @NonNull
   public final TextView accelerometer;
 
   @NonNull
@@ -35,10 +38,11 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final Button stopPpg;
 
-  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull TextView accelerometer,
-      @NonNull TextView ppgGreen, @NonNull TextView ppgRed, @NonNull Button startPpg,
-      @NonNull Button stopPpg) {
+  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull TextView Title,
+      @NonNull TextView accelerometer, @NonNull TextView ppgGreen, @NonNull TextView ppgRed,
+      @NonNull Button startPpg, @NonNull Button stopPpg) {
     this.rootView = rootView;
+    this.Title = Title;
     this.accelerometer = accelerometer;
     this.ppgGreen = ppgGreen;
     this.ppgRed = ppgRed;
@@ -73,6 +77,12 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.Title;
+      TextView Title = ViewBindings.findChildViewById(rootView, id);
+      if (Title == null) {
+        break missingId;
+      }
+
       id = R.id.accelerometer;
       TextView accelerometer = ViewBindings.findChildViewById(rootView, id);
       if (accelerometer == null) {
@@ -103,8 +113,8 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, accelerometer, ppgGreen, ppgRed,
-          startPpg, stopPpg);
+      return new ActivityMainBinding((ConstraintLayout) rootView, Title, accelerometer, ppgGreen,
+          ppgRed, startPpg, stopPpg);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

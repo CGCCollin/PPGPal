@@ -1,6 +1,5 @@
 package com.cgcworks.ppgpal.Activities
 
-import android.app.Activity
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
@@ -9,35 +8,23 @@ import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
 import android.os.Environment
+import android.os.SystemClock
 import android.provider.Settings
 import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
-import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.lifecycle.lifecycleScope
 import com.cgcworks.ppgpal.databinding.ActivityMainBinding
-import com.cgcworks.ppgpal.datatstructs.Accelerometer
-import com.cgcworks.ppgpal.datatstructs.PPGGreen
-import com.cgcworks.ppgpal.datatstructs.PPGRed
 import com.google.android.gms.tasks.Task
 import com.google.android.gms.tasks.Tasks
 import com.google.android.gms.wearable.CapabilityClient
-import com.google.android.gms.wearable.CapabilityInfo
-import com.google.android.gms.wearable.MessageClient.OnMessageReceivedListener
-import com.google.android.gms.wearable.MessageEvent
 import com.google.android.gms.wearable.Node
 import com.google.android.gms.wearable.Wearable
-import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import org.json.JSONArray
-import java.io.File
-
-import com.cgcworks.ppgpal.Receiver.*
-
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -50,10 +37,11 @@ class MainActivity : AppCompatActivity() {
     private val TAG = MainActivity::class.java.name
     private val PERMISSION_REQ_TAG = 1
     private lateinit var watchNode: Node
+    private var lastMessageSentTime: Long = 0
 
-    private lateinit var ppgRedReceiver: PPGRedReceiver
-    private lateinit var ppgGreenReceiver: PPGGreenReceiver
-    private lateinit var accelReceiver: AccelReceiver
+    private lateinit var ppgRedReceiver: BroadcastReceiver
+    private lateinit var ppgGreenReceiver: BroadcastReceiver
+    private lateinit var accelReceiver: BroadcastReceiver
 
     private var ppgRedValues = mutableListOf<Int>()
     private var ppgGreenValues = mutableListOf<Int>()
@@ -61,9 +49,10 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.d(TAG, "onCreate: Activity created")
 
-        //Create a list of neccessary permissions
-        perms = ArrayList<String>()
+        // Create a list of necessary permissions
+        perms = ArrayList()
         perms.add(android.Manifest.permission.BLUETOOTH)
         perms.add(android.Manifest.permission.BLUETOOTH_ADMIN)
         perms.add(android.Manifest.permission.ACCESS_COARSE_LOCATION)
@@ -71,87 +60,81 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
 
-        //initialize view elements
+        // Initialize view elements
         ppgRedLabel = binding.ppgRed
         ppgGreenLabel = binding.ppgGreen
-        accelerometerLabel  = binding.accelerometer
+        accelerometerLabel = binding.accelerometer
 
         startButton = binding.startPpg
         stopButton = binding.stopPpg
 
-        startButton.setOnClickListener(){
+        startButton.setOnClickListener {
             Log.i(TAG, "Start Button Clicked")
             messaging("START")
         }
 
-        stopButton.setOnClickListener() {
+        stopButton.setOnClickListener {
             Log.i(TAG, "Stop Button Clicked")
             messaging("STOP")
         }
 
         val view = binding.root
         setContentView(view)
-        checkPermissions(this,perms.toTypedArray())
-        getWriteExternalStoargePerms()
+        checkPermissions(this, perms.toTypedArray())
+        getWriteExternalStoragePerms()
         setupHealthTrackingNodes()
 
-        ppgRedReceiver = object : PPGRedReceiver() {
+        ppgRedReceiver = object : BroadcastReceiver() {
             override fun onReceive(context: Context, intent: Intent) {
-                Log.i(TAG, "PPG RED RECEIVER HIT")
                 val data = intent.getStringExtra("data")
+                Log.d(TAG, "PPG Red Receiver received data: $data")
                 data?.let {
                     updatePPGRedData(it)
                 }
             }
         }
 
-        ppgGreenReceiver = object : PPGGreenReceiver() {
-
+        ppgGreenReceiver = object : BroadcastReceiver() {
             override fun onReceive(context: Context, intent: Intent) {
-                Log.i(TAG, "PPG GREEN RECEIVER HIT")
                 val data = intent.getStringExtra("data")
+                Log.d(TAG, "PPG Green Receiver received data: $data")
                 data?.let {
                     updatePPGGreenData(it)
                 }
             }
         }
 
-        accelReceiver = object : AccelReceiver() {
+        accelReceiver = object : BroadcastReceiver() {
             override fun onReceive(context: Context, intent: Intent) {
-                Log.i(TAG, "ACCELEROMETER RECEIVER HIT")
                 val data = intent.getStringExtra("data")
+                Log.d(TAG, "Accelerometer Receiver received data: $data")
                 data?.let {
                     updateAccelData(it)
                 }
             }
         }
 
-
         // Register receivers for new broadcast actions
-        registerReceiver(ppgRedReceiver, IntentFilter(PPG_RED_BROADCAST), Context.RECEIVER_NOT_EXPORTED)
-        registerReceiver(ppgGreenReceiver, IntentFilter(PPG_GREEN_BROADCAST), Context.RECEIVER_NOT_EXPORTED)
-        registerReceiver(accelReceiver, IntentFilter(ACCEL_BROADCAST), Context.RECEIVER_NOT_EXPORTED)
-
+    registerReceiver(ppgRedReceiver, IntentFilter(PPG_RED_BROADCAST), Context.RECEIVER_EXPORTED)
+        registerReceiver(ppgGreenReceiver, IntentFilter(PPG_GREEN_BROADCAST), Context.RECEIVER_EXPORTED)
+        registerReceiver(accelReceiver, IntentFilter(ACCEL_BROADCAST), Context.RECEIVER_EXPORTED)
     }
 
-    fun requestPermission(){
+    fun requestPermission() {
         val it = perms.iterator()
-        while(it.hasNext()){
-            if((ActivityCompat.checkSelfPermission(this,it.next())
-                == PackageManager.PERMISSION_GRANTED)
-            ){
+        while (it.hasNext()) {
+            if ((ActivityCompat.checkSelfPermission(this, it.next()) == PackageManager.PERMISSION_GRANTED)) {
                 it.remove()
             }
         }
 
-        if(perms.isEmpty()){
+        if (perms.isEmpty()) {
             setResult(RESULT_OK)
             Log.i(TAG, "requestPermission: PERMISSIONS GRANTED.")
             finish()
-        }
-        else{
-            var permissions: Array<String> = perms.toTypedArray()
-            ActivityCompat.requestPermissions(this,permissions,this.PERMISSION_REQ_TAG)
+        } else {
+            val permissions: Array<String> = perms.toTypedArray()
+            ActivityCompat.requestPermissions(this, permissions, this.PERMISSION_REQ_TAG)
         }
 
     }
@@ -164,43 +147,35 @@ class MainActivity : AppCompatActivity() {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         Log.i(TAG, "RequestPermissionResults")
 
-        if(PERMISSION_REQ_TAG == 1){
-            if (permissions.size == 0) {
-                Log.i(
-                    TAG,
-                    "onRequestPermissionsResult : permission is 0"
-                )
+        if (PERMISSION_REQ_TAG == 1) {
+            if (permissions.isEmpty()) {
+                Log.i(TAG, "onRequestPermissionsResult : permission is 0")
                 return
             }
 
-            for (p in grantResults){
-                if(p == PackageManager.PERMISSION_DENIED){
-                    Log.i(TAG, "onRequestPermissionResult: PERMISSION: " + p.toString() + "DENIED")
+            for (p in grantResults) {
+                if (p == PackageManager.PERMISSION_DENIED) {
+                    Log.i(TAG, "onRequestPermissionResult: PERMISSION: $p DENIED")
                 }
             }
             this.recreate()
         }
-
-
     }
 
-    fun checkPermissions(context: Context, permissions: Array<String>): Boolean{
-        for (p in permissions){
-            if(ActivityCompat.checkSelfPermission(context,p) != PackageManager.PERMISSION_GRANTED) {
-                Log.i(TAG, "checkPermissions: PERMISSION: " + p + "DENIED")
-                    requestPermission()
-                    return false
-
+    fun checkPermissions(context: Context, permissions: Array<String>): Boolean {
+        for (p in permissions) {
+            if (ActivityCompat.checkSelfPermission(context, p) != PackageManager.PERMISSION_GRANTED) {
+                Log.i(TAG, "checkPermissions: PERMISSION: $p DENIED")
+                requestPermission()
+                return false
             }
         }
 
-
         Log.i(TAG, "checkPermissions: PERMISSIONS GRANTED")
         return true
-
     }
 
-    private fun getWriteExternalStoargePerms() {
+    private fun getWriteExternalStoragePerms() {
         if (Environment.isExternalStorageManager()) {
             Toast.makeText(
                 this,
@@ -208,7 +183,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.LENGTH_SHORT
             ).show()
         } else {
-            val uri = Uri.parse("package:${packageName}")
+            val uri = Uri.parse("package:$packageName")
             startActivityForResult(
                 Intent(
                     Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION,
@@ -223,29 +198,55 @@ class MainActivity : AppCompatActivity() {
                 ).show()
             }
         }
-
     }
 
-    fun messaging(message: String){
-        watchNode.id?.also{nodeId ->
-            val sendTask: Task<*> = Wearable.getMessageClient(this).sendMessage(
-                nodeId,
-                CONTROL_MESSAGE_PATH,
-                message.toByteArray()
-            ).apply {
-                addOnSuccessListener {
-                    Log.i(TAG, "Message sent successfully")
+    fun messaging(message: String) {
+        val currentTime = SystemClock.elapsedRealtime()
+        if (currentTime - lastMessageSentTime >= MESSAGE_INTERVAL_MS) {
+            watchNode.id?.also { nodeId ->
+                val sendTask: Task<*> = Wearable.getMessageClient(this).sendMessage(
+                    nodeId,
+                    CONTROL_MESSAGE_PATH,
+                    message.toByteArray()
+                ).apply {
+                    addOnSuccessListener {
+                        runOnUiThread {
+                            Toast.makeText(
+                                this@MainActivity,
+                                "Sent Start Signal",
+                                Toast.LENGTH_SHORT
+                            ).show()
+                        }
+                        Log.i(TAG, "Message sent successfully")
+                    }
+                    addOnFailureListener {
+                        runOnUiThread {
+                            Toast.makeText(
+                                this@MainActivity,
+                                "Sent Stop Signal",
+                                Toast.LENGTH_SHORT
+                            ).show()
+                        }
+                        Log.e(TAG, "Failed to send message")
+
+                    }
                 }
-                addOnFailureListener {
-                    Log.e(TAG, "Failed to send message")
-                }
+                lastMessageSentTime = currentTime
+            }
+        } else {
+            Log.i(TAG, "Message not sent to avoid spamming")
+            runOnUiThread {
+                Toast.makeText(
+                    this,
+                    "Please wait 2 seconds between control attemtps.",
+                    Toast.LENGTH_SHORT
+                ).show()
             }
         }
-
     }
 
 
-    private fun setupHealthTrackingNodes(){
+    private fun setupHealthTrackingNodes() {
         lifecycleScope.launch(Dispatchers.IO) {
             try {
                 val capabilityInfo = Tasks.await(
@@ -269,7 +270,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun updatePPGCapability(node: Node){
+    private fun updatePPGCapability(node: Node) {
         watchNode = node
     }
 
@@ -284,15 +285,14 @@ class MainActivity : AppCompatActivity() {
         val values = data.split(";").map { it.split(",")[1].toInt() }
         ppgRedValues.addAll(values)
         val average = ppgRedValues.average()
-        ppgRedLabel.text = "PPG Red Avg: $average"
+        ppgRedLabel.text = "PPG Red Avg: %.2f".format(average)
     }
 
     fun updatePPGGreenData(data: String) {
-
         val values = data.split(";").map { it.split(",")[1].toInt() }
         ppgGreenValues.addAll(values)
         val average = ppgGreenValues.average()
-        ppgGreenLabel.text = "PPG Green Avg: $average"
+        ppgGreenLabel.text = "PPG Green Avg: %.2f".format(average)
     }
 
     fun updateAccelData(data: String) {
@@ -304,10 +304,8 @@ class MainActivity : AppCompatActivity() {
         val avgX = accelValues.map { it.first }.average()
         val avgY = accelValues.map { it.second }.average()
         val avgZ = accelValues.map { it.third }.average()
-        accelerometerLabel.text = "Accelerometer: x: $avgX, y: $avgY, z: $avgZ"
+        accelerometerLabel.text = "Accelerometer: x: %.2f, y: %.2f, z: %.2f".format(avgX, avgY, avgZ)
     }
-
-
 
     companion object {
         private const val HEALTH_TRACKING_CAPABILITY_NAME = "health_transmit"
@@ -318,7 +316,6 @@ class MainActivity : AppCompatActivity() {
         const val PPG_RED_BROADCAST = "com.cgcworks.ppgpal.PPG_RED_BROADCAST"
         const val PPG_GREEN_BROADCAST = "com.cgcworks.ppgpal.PPG_GREEN_BROADCAST"
         const val ACCEL_BROADCAST = "com.cgcworks.ppgpal.ACCEL_BROADCAST"
-
+        private const val MESSAGE_INTERVAL_MS = 2000
     }
-
 }

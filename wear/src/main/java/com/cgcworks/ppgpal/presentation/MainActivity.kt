@@ -49,8 +49,7 @@ import kotlin.properties.Delegates
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: MainBinding
-    private lateinit var ppg_red_label: TextView
-    private lateinit var ppg_green_label: TextView
+    private lateinit var statusLabel: TextView
     private lateinit var healthTracking: HealthTrackingService
     private lateinit var connectionListener: ConnectionListener
     private var redTrackerListener: TrackerEventListener? = null
@@ -66,6 +65,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var info: PackageInfo;
     private var infer by Delegates.notNull<Boolean>(); //use this value to either make inferences, or disable them
     private val ppgRedData = ArrayList<PPGRed>()
+    private var controlMessage: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -106,8 +106,6 @@ class MainActivity : AppCompatActivity() {
             override fun onError(e: HealthTracker.TrackerError?) {
                 Log.e(PPG_RED_TAG,"Tracker Error: ${e}")
             }
-
-
 
         }
 
@@ -224,8 +222,17 @@ class MainActivity : AppCompatActivity() {
         binding = MainBinding.inflate(layoutInflater)
         val view = binding.root
         //Textviews
-        ppg_red_label = binding.ppgRedLabel
-        ppg_green_label = binding.ppgGreenLabel
+        statusLabel = binding.status
+
+        // Register the local broadcast receiver
+        LocalBroadcastManager.getInstance(this)
+            .registerReceiver(messageReceiver, IntentFilter("com.example.ACTION_MESSAGE_RECEIVED"))
+
+        // Check if there's a control message in the intent
+        controlMessage = intent.getStringExtra("controlMessage")
+        controlMessage?.let {
+            handleControlMessage(it)
+        }
 
         setContentView(view)
         connectToNode()
@@ -261,6 +268,12 @@ class MainActivity : AppCompatActivity() {
                 "requestPermissions"
             )
         }
+    }
+
+    private fun handleControlMessage(message: String) {
+        Log.i(TAG, "Handling Control Message: $message")
+        // Process the control message
+        healthTrackerControl(message)
     }
 
     override fun onRequestPermissionsResult(
@@ -325,10 +338,24 @@ class MainActivity : AppCompatActivity() {
         return Tasks.await(Wearable.getNodeClient(this).connectedNodes).map { it.id }
     }
 
+    override fun onNewIntent(intent: Intent?) {
+        super.onNewIntent(intent)
+        intent?.let {
+            controlMessage = it.getStringExtra("controlMessage")
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        controlMessage?.let {
+            handleControlMessage(it)
+            controlMessage = null // Clear the message after handling
+        }
+    }
 
     override fun onDestroy() {
         super.onDestroy()
-        //.Disconnect the tracking service.
+        LocalBroadcastManager.getInstance(this).unregisterReceiver(messageReceiver)
         stopTracking(ppgRedTracker)
         stopTracking(ppgGreenTracker)
         stopTracking(accelTracker)
@@ -386,15 +413,22 @@ class MainActivity : AppCompatActivity() {
                     message.toByteArray()
                 ).apply {
                     addOnSuccessListener {
-                        Log.i(TAG, "Message sent successfully, path: ${path}")
+                        Log.i(TAG, "Message sent successfully, path: $path")
+                        runOnUiThread {
+                            statusLabel.text = "Telemetry transmitting."
+                        }
                     }
                     addOnFailureListener {
                         Log.e(TAG, "Failed to send message")
+                        runOnUiThread {
+                            statusLabel.text = "Failed to transmit telemetry."
+                        }
                     }
                 }
             }
         }
     }
+
 
     private fun connectToNode(){
         lifecycleScope.launch(Dispatchers.IO) {
@@ -418,7 +452,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun healthTrackerControl(message: String){
-        Log.i(TAG, "Received Control Code: " + message)
+        Log.i(TAG, "Received Control Code: $message")
         if(message == START_CMD){
             if(greenTrackerListener == null || redTrackerListener == null){
                 Log.e(TAG, "Tracker Listeners are null")
@@ -427,15 +461,20 @@ class MainActivity : AppCompatActivity() {
             startTracking(ppgGreenTracker, greenTrackerListener!!)
             startTracking(ppgRedTracker, redTrackerListener!!)
             startTracking(accelTracker, accelTrackerListener!!)
-
+            runOnUiThread {
+                statusLabel.text = "Telemetry started"
+            }
         }
         else if (message == STOP_CMD){
             stopTracking(ppgGreenTracker)
             stopTracking(ppgRedTracker)
             stopTracking(accelTracker)
-
+            runOnUiThread {
+                statusLabel.text = "Telemetry stopped"
+            }
         }
     }
+
 
     override fun onStart() {
         super.onStart()

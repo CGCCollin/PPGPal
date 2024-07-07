@@ -3093,6 +3093,7 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
+id Title
 id accelerate
 id accelerometer
 id accessibility_action_clickable_span

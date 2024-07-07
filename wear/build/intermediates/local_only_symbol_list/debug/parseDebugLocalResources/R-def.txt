@@ -3,8 +3,7 @@ local
 array android_wear_capabilities
 drawable tile_preview
 id home_label
-id ppg_green_label
-id ppg_red_label
+id status
 layout main
 mipmap ic_launcher
 string app_name

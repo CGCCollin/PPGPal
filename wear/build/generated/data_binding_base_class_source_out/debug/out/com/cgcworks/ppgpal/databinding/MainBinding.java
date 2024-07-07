@@ -23,17 +23,13 @@ public final class MainBinding implements ViewBinding {
   public final TextView homeLabel;
 
   @NonNull
-  public final TextView ppgGreenLabel;
-
-  @NonNull
-  public final TextView ppgRedLabel;
+  public final TextView status;
 
   private MainBinding(@NonNull ConstraintLayout rootView, @NonNull TextView homeLabel,
-      @NonNull TextView ppgGreenLabel, @NonNull TextView ppgRedLabel) {
+      @NonNull TextView status) {
     this.rootView = rootView;
     this.homeLabel = homeLabel;
-    this.ppgGreenLabel = ppgGreenLabel;
-    this.ppgRedLabel = ppgRedLabel;
+    this.status = status;
   }
 
   @Override
@@ -69,19 +65,13 @@ public final class MainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.ppg_green_label;
-      TextView ppgGreenLabel = ViewBindings.findChildViewById(rootView, id);
-      if (ppgGreenLabel == null) {
+      id = R.id.status;
+      TextView status = ViewBindings.findChildViewById(rootView, id);
+      if (status == null) {
         break missingId;
       }
 
-      id = R.id.ppg_red_label;
-      TextView ppgRedLabel = ViewBindings.findChildViewById(rootView, id);
-      if (ppgRedLabel == null) {
-        break missingId;
-      }
-
-      return new MainBinding((ConstraintLayout) rootView, homeLabel, ppgGreenLabel, ppgRedLabel);
+      return new MainBinding((ConstraintLayout) rootView, homeLabel, status);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

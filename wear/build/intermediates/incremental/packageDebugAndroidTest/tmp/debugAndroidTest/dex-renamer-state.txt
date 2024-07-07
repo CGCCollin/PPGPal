@@ -1,6 +1,6 @@
-#Tue Apr 09 19:09:05 EDT 2024
-base.0=C\:\\Users\\Connor\\Documents\\coding\\Android\\PPGPal\\wear\\build\\intermediates\\dex\\debugAndroidTest\\mergeExtDexDebugAndroidTest\\classes.dex
-base.1=C\:\\Users\\Connor\\Documents\\coding\\Android\\PPGPal\\wear\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\0\\classes.dex
+#Sun Jul 07 17:02:19 EDT 2024
+base.0=C\:\\Users\\tacotortilla\\CodeVolume\\Android\\PPGPalTrue\\wear\\build\\intermediates\\dex\\debugAndroidTest\\mergeExtDexDebugAndroidTest\\classes.dex
+base.1=C\:\\Users\\tacotortilla\\CodeVolume\\Android\\PPGPalTrue\\wear\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\0\\classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
 renamed.0=classes.dex

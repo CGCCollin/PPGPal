@@ -9,48 +9,48 @@
 9        android:targetSdkVersion="34" />
 10
 11    <uses-feature android:name="android.hardware.type.watch" />
-11-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:4:5-64
-11-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:4:19-61
+11-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:4:5-64
+11-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:4:19-61
 12
 13    <uses-permission android:name="android.permission.WAKE_LOCK" />
-13-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:6:5-68
-13-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:6:22-65
+13-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:6:5-68
+13-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:6:22-65
 14    <uses-permission android:name="android.permission.BODY_SENSORS" />
-14-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:7:5-70
-14-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:7:22-68
+14-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:7:5-70
+14-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:7:22-68
 15    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
-15-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:8:5-78
-15-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:8:22-76
+15-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:8:5-78
+15-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:8:22-76
 16    <uses-permission android:name="android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND" />
-16-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:9:5-93
-16-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:9:22-91
+16-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:9:5-93
+16-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:9:22-91
 17    <uses-permission android:name="android.permission.REQUEST_COMPANION_USE_DATA_IN_BACKGROUND" />
-17-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:10:5-98
-17-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:10:22-96
+17-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:10:5-98
+17-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:10:22-96
 18    <uses-permission android:name="android.permission.BLUETOOTH" />
-18-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:11:5-67
-18-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:11:22-65
+18-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:11:5-67
+18-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:11:22-65
 19    <uses-permission android:name="android.permission.INTERNET" />
-19-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:12:5-67
-19-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:12:22-64
+19-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:12:5-67
+19-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:12:22-64
 20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-20-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:13:5-79
-20-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:13:22-76
+20-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:13:5-79
+20-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:13:22-76
 21    <uses-permission android:name="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE" />
-21-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:14:5-98
-21-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:14:22-96
+21-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:14:5-98
+21-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:14:22-96
 22
 23    <queries>
-23-->[healthsdk.aar] C:\Users\Connor\.gradle\caches\transforms-3\78d6c980c7d054eb2988612891b2421a\transformed\healthsdk\AndroidManifest.xml:9:5-11:15
+23-->[healthsdk.aar] C:\Users\tacotortilla\.gradle\caches\transforms-4\ad4a4d0a2bd3d9c647d8098417ea792b\transformed\healthsdk\AndroidManifest.xml:9:5-11:15
 24        <package android:name="com.sec.android.app.samsungapps" />
-24-->[healthsdk.aar] C:\Users\Connor\.gradle\caches\transforms-3\78d6c980c7d054eb2988612891b2421a\transformed\healthsdk\AndroidManifest.xml:10:9-67
-24-->[healthsdk.aar] C:\Users\Connor\.gradle\caches\transforms-3\78d6c980c7d054eb2988612891b2421a\transformed\healthsdk\AndroidManifest.xml:10:18-64
+24-->[healthsdk.aar] C:\Users\tacotortilla\.gradle\caches\transforms-4\ad4a4d0a2bd3d9c647d8098417ea792b\transformed\healthsdk\AndroidManifest.xml:10:9-67
+24-->[healthsdk.aar] C:\Users\tacotortilla\.gradle\caches\transforms-4\ad4a4d0a2bd3d9c647d8098417ea792b\transformed\healthsdk\AndroidManifest.xml:10:18-64
 25
 26        <intent>
-26-->[androidx.wear.tiles:tiles:1.3.0] C:\Users\Connor\.gradle\caches\transforms-3\616fc752ed7d21c17a595a33ef787c6c\transformed\tiles-1.3.0\AndroidManifest.xml:8:9-10:18
+26-->[androidx.wear.tiles:tiles:1.3.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\df4b2dc86d08f544fd75ce67bb99e626\transformed\tiles-1.3.0\AndroidManifest.xml:8:9-10:18
 27            <action android:name="androidx.wear.tiles.action.BIND_UPDATE_REQUESTER" />
-27-->[androidx.wear.tiles:tiles:1.3.0] C:\Users\Connor\.gradle\caches\transforms-3\616fc752ed7d21c17a595a33ef787c6c\transformed\tiles-1.3.0\AndroidManifest.xml:9:13-87
-27-->[androidx.wear.tiles:tiles:1.3.0] C:\Users\Connor\.gradle\caches\transforms-3\616fc752ed7d21c17a595a33ef787c6c\transformed\tiles-1.3.0\AndroidManifest.xml:9:21-84
+27-->[androidx.wear.tiles:tiles:1.3.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\df4b2dc86d08f544fd75ce67bb99e626\transformed\tiles-1.3.0\AndroidManifest.xml:9:13-87
+27-->[androidx.wear.tiles:tiles:1.3.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\df4b2dc86d08f544fd75ce67bb99e626\transformed\tiles-1.3.0\AndroidManifest.xml:9:21-84
 28        </intent>
 29    </queries>
 30
@@ -59,282 +59,282 @@
 33    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 34
 35    <permission
-35-->[androidx.core:core:1.12.0] C:\Users\Connor\.gradle\caches\transforms-3\ab6a12c1b00e97995a1a7e0a7609dff2\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+35-->[androidx.core:core:1.12.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\ef2ec74ad400566991a80e155082cf61\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
 36        android:name="com.cgcworks.ppgpal.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-36-->[androidx.core:core:1.12.0] C:\Users\Connor\.gradle\caches\transforms-3\ab6a12c1b00e97995a1a7e0a7609dff2\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+36-->[androidx.core:core:1.12.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\ef2ec74ad400566991a80e155082cf61\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
 37        android:protectionLevel="signature" />
-37-->[androidx.core:core:1.12.0] C:\Users\Connor\.gradle\caches\transforms-3\ab6a12c1b00e97995a1a7e0a7609dff2\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+37-->[androidx.core:core:1.12.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\ef2ec74ad400566991a80e155082cf61\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
 38
 39    <uses-permission android:name="com.cgcworks.ppgpal.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- Permission will be merged into the manifest of the hosting app. -->
-39-->[androidx.core:core:1.12.0] C:\Users\Connor\.gradle\caches\transforms-3\ab6a12c1b00e97995a1a7e0a7609dff2\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
-39-->[androidx.core:core:1.12.0] C:\Users\Connor\.gradle\caches\transforms-3\ab6a12c1b00e97995a1a7e0a7609dff2\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+39-->[androidx.core:core:1.12.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\ef2ec74ad400566991a80e155082cf61\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+39-->[androidx.core:core:1.12.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\ef2ec74ad400566991a80e155082cf61\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
 40    <!-- Is required to launch foreground extraction service for targetSdkVersion 28+. -->
 41    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-41-->[com.google.android.play:core:1.8.0] C:\Users\Connor\.gradle\caches\transforms-3\3e9fa0e49127e60fc68e8b0a5ea2df90\transformed\core-1.8.0\AndroidManifest.xml:8:3-74
-41-->[com.google.android.play:core:1.8.0] C:\Users\Connor\.gradle\caches\transforms-3\3e9fa0e49127e60fc68e8b0a5ea2df90\transformed\core-1.8.0\AndroidManifest.xml:8:20-72
+41-->[com.google.android.play:core:1.8.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\ed85fc4d41fe11bf9e77ef261e5e6629\transformed\core-1.8.0\AndroidManifest.xml:8:3-74
+41-->[com.google.android.play:core:1.8.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\ed85fc4d41fe11bf9e77ef261e5e6629\transformed\core-1.8.0\AndroidManifest.xml:8:20-72
 42
 43    <application
-43-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:19:5-87:19
+43-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:19:5-87:19
 44        android:allowBackup="true"
-44-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:20:9-35
+44-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:20:9-35
 45        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-45-->[androidx.core:core:1.12.0] C:\Users\Connor\.gradle\caches\transforms-3\ab6a12c1b00e97995a1a7e0a7609dff2\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+45-->[androidx.core:core:1.12.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\ef2ec74ad400566991a80e155082cf61\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
 46        android:debuggable="true"
 47        android:enableOnBackInvokedCallback="true"
-47-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:25:9-51
+47-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:25:9-51
 48        android:extractNativeLibs="false"
 49        android:icon="@mipmap/ic_launcher"
-49-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:21:9-43
+49-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:21:9-43
 50        android:label="@string/app_name"
-50-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:22:9-41
+50-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:22:9-41
 51        android:supportsRtl="true"
-51-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:23:9-35
+51-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:23:9-35
 52        android:testOnly="true"
 53        android:theme="@style/AppTheme" >
-53-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:24:9-40
+53-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:24:9-40
 54        <service
-54-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:26:9-41:19
+54-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:26:9-41:19
 55            android:name="com.cgcworks.ppgpal.complication.MainComplicationService"
-55-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:27:13-65
+55-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:27:13-65
 56            android:exported="true"
-56-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:28:13-36
+56-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:28:13-36
 57            android:label="@string/complication_label"
-57-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:29:13-55
+57-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:29:13-55
 58            android:permission="com.google.android.wearable.permission.BIND_COMPLICATION_PROVIDER" >
-58-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:30:13-99
+58-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:30:13-99
 59            <intent-filter>
-59-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:31:13-33:29
+59-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:31:13-33:29
 60                <action android:name="android.support.wearable.complications.ACTION_COMPLICATION_UPDATE_REQUEST" />
-60-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:32:17-116
-60-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:32:25-113
+60-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:32:17-116
+60-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:32:25-113
 61            </intent-filter>
 62
 63            <meta-data
-63-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:35:13-37:46
+63-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:35:13-37:46
 64                android:name="android.support.wearable.complications.SUPPORTED_TYPES"
-64-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:36:17-86
+64-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:36:17-86
 65                android:value="SHORT_TEXT" />
-65-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:37:17-43
+65-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:37:17-43
 66            <meta-data
-66-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:38:13-40:37
+66-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:38:13-40:37
 67                android:name="android.support.wearable.complications.UPDATE_PERIOD_SECONDS"
-67-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:39:17-92
+67-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:39:17-92
 68                android:value="0" />
-68-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:40:17-34
+68-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:40:17-34
 69        </service>
 70        <service
-70-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:42:9-54:19
+70-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:42:9-54:19
 71            android:name="com.cgcworks.ppgpal.tile.MainTileService"
-71-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:43:13-49
+71-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:43:13-49
 72            android:exported="true"
-72-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:44:13-36
+72-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:44:13-36
 73            android:label="@string/tile_label"
-73-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:45:13-47
+73-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:45:13-47
 74            android:permission="com.google.android.wearable.permission.BIND_TILE_PROVIDER" >
-74-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:46:13-91
+74-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:46:13-91
 75            <intent-filter>
-75-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:47:13-49:29
+75-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:47:13-49:29
 76                <action android:name="androidx.wear.tiles.action.BIND_TILE_PROVIDER" />
-76-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:48:17-88
-76-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:48:25-85
+76-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:48:17-88
+76-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:48:25-85
 77            </intent-filter>
 78
 79            <meta-data
-79-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:51:13-53:61
+79-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:51:13-53:61
 80                android:name="androidx.wear.tiles.PREVIEW"
-80-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:52:17-59
+80-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:52:17-59
 81                android:resource="@drawable/tile_preview" />
-81-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:53:17-58
+81-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:53:17-58
 82        </service>
 83        <service
-83-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:56:4-62:19
+83-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:56:4-62:19
 84            android:name="com.cgcworks.ppgpal.services.MessageHandler"
-84-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:56:13-52
+84-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:56:13-52
 85            android:exported="true" >
-85-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:57:13-36
+85-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:57:13-36
 86            <intent-filter>
-86-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:58:8-61:24
+86-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:58:8-61:24
 87                <action android:name="com.google.android.gms.wearable.MESSAGE_RECEIVED" />
-87-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:59:12-86
-87-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:59:20-83
+87-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:59:12-86
+87-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:59:20-83
 88
 89                <data
-89-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:60:12-89
+89-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:60:12-89
 90                    android:host="*"
-90-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:60:40-56
+90-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:60:40-56
 91                    android:pathPrefix="/CONTROL"
-91-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:60:57-86
+91-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:60:57-86
 92                    android:scheme="wear" />
-92-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:60:18-39
+92-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:60:18-39
 93            </intent-filter>
 94        </service>
 95
 96        <uses-library
-96-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:65:9-67:39
+96-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:65:9-67:39
 97            android:name="com.google.android.wearable"
-97-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:66:13-55
+97-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:66:13-55
 98            android:required="true" />
-98-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:67:13-36
+98-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:67:13-36
 99        <!--
 100               Set to true if your app is Standalone, that is, it does not require the handheld
 101               app to run.
 102        -->
 103        <meta-data
-103-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:72:9-74:36
+103-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:72:9-74:36
 104            android:name="com.google.android.wearable.standalone"
-104-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:73:13-66
+104-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:73:13-66
 105            android:value="true" />
-105-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:74:13-33
+105-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:74:13-33
 106
 107        <activity
-107-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:76:9-86:20
+107-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:76:9-86:20
 108            android:name="com.cgcworks.ppgpal.presentation.MainActivity"
-108-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:77:13-54
+108-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:77:13-54
 109            android:exported="true"
-109-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:78:13-36
+109-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:78:13-36
 110            android:label="@string/app_name"
-110-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:79:13-45
+110-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:79:13-45
 111            android:theme="@style/AppTheme" >
-111-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:80:13-44
+111-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:80:13-44
 112            <intent-filter>
-112-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:81:13-85:29
+112-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:81:13-85:29
 113                <action android:name="android.intent.action.MAIN" />
-113-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:82:17-69
-113-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:82:25-66
+113-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:82:17-69
+113-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:82:25-66
 114
 115                <category android:name="android.intent.category.LAUNCHER" />
-115-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:84:17-77
-115-->C:\Users\Connor\Documents\coding\Android\PPGPal\wear\src\main\AndroidManifest.xml:84:27-74
+115-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:84:17-77
+115-->C:\Users\tacotortilla\CodeVolume\Android\PPGPalTrue\wear\src\main\AndroidManifest.xml:84:27-74
 116            </intent-filter>
 117        </activity>
 118        <activity
-118-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Connor\.gradle\caches\transforms-3\889c24d898e2e62154da5c18d68b7871\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+118-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\tacotortilla\.gradle\caches\transforms-4\666a68ddaa9d7706056df734b5be7dff\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
 119            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-119-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Connor\.gradle\caches\transforms-3\889c24d898e2e62154da5c18d68b7871\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+119-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\tacotortilla\.gradle\caches\transforms-4\666a68ddaa9d7706056df734b5be7dff\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
 120            android:exported="false"
-120-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Connor\.gradle\caches\transforms-3\889c24d898e2e62154da5c18d68b7871\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+120-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\tacotortilla\.gradle\caches\transforms-4\666a68ddaa9d7706056df734b5be7dff\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
 121            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-121-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Connor\.gradle\caches\transforms-3\889c24d898e2e62154da5c18d68b7871\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+121-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\tacotortilla\.gradle\caches\transforms-4\666a68ddaa9d7706056df734b5be7dff\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
 122
 123        <meta-data
-123-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Connor\.gradle\caches\transforms-3\ab045906a45ee28b92a08447bcbfbe7b\transformed\play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+123-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\76050cafc17216efc585658acfbd6a2d\transformed\play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
 124            android:name="com.google.android.gms.version"
-124-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Connor\.gradle\caches\transforms-3\ab045906a45ee28b92a08447bcbfbe7b\transformed\play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+124-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\76050cafc17216efc585658acfbd6a2d\transformed\play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
 125            android:value="@integer/google_play_services_version" />
-125-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Connor\.gradle\caches\transforms-3\ab045906a45ee28b92a08447bcbfbe7b\transformed\play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+125-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\76050cafc17216efc585658acfbd6a2d\transformed\play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
 126
 127        <activity
-127-->[androidx.compose.ui:ui-tooling-android:1.6.5] C:\Users\Connor\.gradle\caches\transforms-3\f17bc8033c951a52bca56daf7118338c\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+127-->[androidx.compose.ui:ui-tooling-android:1.6.5] C:\Users\tacotortilla\.gradle\caches\transforms-4\a1ba18a5946bfd866af6c72e2738364d\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
 128            android:name="androidx.compose.ui.tooling.PreviewActivity"
-128-->[androidx.compose.ui:ui-tooling-android:1.6.5] C:\Users\Connor\.gradle\caches\transforms-3\f17bc8033c951a52bca56daf7118338c\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+128-->[androidx.compose.ui:ui-tooling-android:1.6.5] C:\Users\tacotortilla\.gradle\caches\transforms-4\a1ba18a5946bfd866af6c72e2738364d\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
 129            android:exported="true" />
-129-->[androidx.compose.ui:ui-tooling-android:1.6.5] C:\Users\Connor\.gradle\caches\transforms-3\f17bc8033c951a52bca56daf7118338c\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+129-->[androidx.compose.ui:ui-tooling-android:1.6.5] C:\Users\tacotortilla\.gradle\caches\transforms-4\a1ba18a5946bfd866af6c72e2738364d\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
 130        <activity
-130-->[androidx.compose.ui:ui-test-manifest:1.6.5] C:\Users\Connor\.gradle\caches\transforms-3\5a07db241cb4f09eeb2bff28205806a8\transformed\ui-test-manifest-1.6.5\AndroidManifest.xml:23:9-25:39
+130-->[androidx.compose.ui:ui-test-manifest:1.6.5] C:\Users\tacotortilla\.gradle\caches\transforms-4\f39a9db334e49d257256ff0e793fd9b5\transformed\ui-test-manifest-1.6.5\AndroidManifest.xml:23:9-25:39
 131            android:name="androidx.activity.ComponentActivity"
-131-->[androidx.compose.ui:ui-test-manifest:1.6.5] C:\Users\Connor\.gradle\caches\transforms-3\5a07db241cb4f09eeb2bff28205806a8\transformed\ui-test-manifest-1.6.5\AndroidManifest.xml:24:13-63
+131-->[androidx.compose.ui:ui-test-manifest:1.6.5] C:\Users\tacotortilla\.gradle\caches\transforms-4\f39a9db334e49d257256ff0e793fd9b5\transformed\ui-test-manifest-1.6.5\AndroidManifest.xml:24:13-63
 132            android:exported="true" />
-132-->[androidx.compose.ui:ui-test-manifest:1.6.5] C:\Users\Connor\.gradle\caches\transforms-3\5a07db241cb4f09eeb2bff28205806a8\transformed\ui-test-manifest-1.6.5\AndroidManifest.xml:25:13-36
+132-->[androidx.compose.ui:ui-test-manifest:1.6.5] C:\Users\tacotortilla\.gradle\caches\transforms-4\f39a9db334e49d257256ff0e793fd9b5\transformed\ui-test-manifest-1.6.5\AndroidManifest.xml:25:13-36
 133
 134        <provider
-134-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Connor\.gradle\caches\transforms-3\038ffb39feb031694203afdf2a093339\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+134-->[androidx.emoji2:emoji2:1.3.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\23fa82fe6c3015192ad077d9fc3a0a37\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
 135            android:name="androidx.startup.InitializationProvider"
-135-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Connor\.gradle\caches\transforms-3\038ffb39feb031694203afdf2a093339\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+135-->[androidx.emoji2:emoji2:1.3.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\23fa82fe6c3015192ad077d9fc3a0a37\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
 136            android:authorities="com.cgcworks.ppgpal.androidx-startup"
-136-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Connor\.gradle\caches\transforms-3\038ffb39feb031694203afdf2a093339\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+136-->[androidx.emoji2:emoji2:1.3.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\23fa82fe6c3015192ad077d9fc3a0a37\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
 137            android:exported="false" >
-137-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Connor\.gradle\caches\transforms-3\038ffb39feb031694203afdf2a093339\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+137-->[androidx.emoji2:emoji2:1.3.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\23fa82fe6c3015192ad077d9fc3a0a37\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
 138            <meta-data
-138-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Connor\.gradle\caches\transforms-3\038ffb39feb031694203afdf2a093339\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+138-->[androidx.emoji2:emoji2:1.3.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\23fa82fe6c3015192ad077d9fc3a0a37\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
 139                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-139-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Connor\.gradle\caches\transforms-3\038ffb39feb031694203afdf2a093339\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+139-->[androidx.emoji2:emoji2:1.3.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\23fa82fe6c3015192ad077d9fc3a0a37\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
 140                android:value="androidx.startup" />
-140-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Connor\.gradle\caches\transforms-3\038ffb39feb031694203afdf2a093339\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+140-->[androidx.emoji2:emoji2:1.3.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\23fa82fe6c3015192ad077d9fc3a0a37\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
 141            <meta-data
-141-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Connor\.gradle\caches\transforms-3\e3614d516b0b2df4ead6e4fd697891b3\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+141-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\c4ed1ae73f36b92c2c7cd436d04bebc3\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
 142                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-142-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Connor\.gradle\caches\transforms-3\e3614d516b0b2df4ead6e4fd697891b3\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+142-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\c4ed1ae73f36b92c2c7cd436d04bebc3\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
 143                android:value="androidx.startup" />
-143-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Connor\.gradle\caches\transforms-3\e3614d516b0b2df4ead6e4fd697891b3\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+143-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\c4ed1ae73f36b92c2c7cd436d04bebc3\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
 144            <meta-data
-144-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Connor\.gradle\caches\transforms-3\3de9c3793a0f317c75ff9e447bc3b8c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+144-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\38cc985706b0ede9d2ab25d94ba55e0c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
 145                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-145-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Connor\.gradle\caches\transforms-3\3de9c3793a0f317c75ff9e447bc3b8c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+145-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\38cc985706b0ede9d2ab25d94ba55e0c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
 146                android:value="androidx.startup" />
-146-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Connor\.gradle\caches\transforms-3\3de9c3793a0f317c75ff9e447bc3b8c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+146-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\38cc985706b0ede9d2ab25d94ba55e0c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
 147        </provider>
 148
 149        <receiver
-149-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Connor\.gradle\caches\transforms-3\3de9c3793a0f317c75ff9e447bc3b8c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+149-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\38cc985706b0ede9d2ab25d94ba55e0c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
 150            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-150-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Connor\.gradle\caches\transforms-3\3de9c3793a0f317c75ff9e447bc3b8c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+150-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\38cc985706b0ede9d2ab25d94ba55e0c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
 151            android:directBootAware="false"
-151-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Connor\.gradle\caches\transforms-3\3de9c3793a0f317c75ff9e447bc3b8c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+151-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\38cc985706b0ede9d2ab25d94ba55e0c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
 152            android:enabled="true"
-152-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Connor\.gradle\caches\transforms-3\3de9c3793a0f317c75ff9e447bc3b8c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+152-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\38cc985706b0ede9d2ab25d94ba55e0c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
 153            android:exported="true"
-153-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Connor\.gradle\caches\transforms-3\3de9c3793a0f317c75ff9e447bc3b8c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+153-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\38cc985706b0ede9d2ab25d94ba55e0c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
 154            android:permission="android.permission.DUMP" >
-154-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Connor\.gradle\caches\transforms-3\3de9c3793a0f317c75ff9e447bc3b8c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+154-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\38cc985706b0ede9d2ab25d94ba55e0c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
 155            <intent-filter>
-155-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Connor\.gradle\caches\transforms-3\3de9c3793a0f317c75ff9e447bc3b8c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+155-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\38cc985706b0ede9d2ab25d94ba55e0c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
 156                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-156-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Connor\.gradle\caches\transforms-3\3de9c3793a0f317c75ff9e447bc3b8c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
-156-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Connor\.gradle\caches\transforms-3\3de9c3793a0f317c75ff9e447bc3b8c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+156-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\38cc985706b0ede9d2ab25d94ba55e0c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+156-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\38cc985706b0ede9d2ab25d94ba55e0c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
 157            </intent-filter>
 158            <intent-filter>
-158-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Connor\.gradle\caches\transforms-3\3de9c3793a0f317c75ff9e447bc3b8c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+158-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\38cc985706b0ede9d2ab25d94ba55e0c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
 159                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-159-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Connor\.gradle\caches\transforms-3\3de9c3793a0f317c75ff9e447bc3b8c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
-159-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Connor\.gradle\caches\transforms-3\3de9c3793a0f317c75ff9e447bc3b8c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+159-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\38cc985706b0ede9d2ab25d94ba55e0c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+159-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\38cc985706b0ede9d2ab25d94ba55e0c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
 160            </intent-filter>
 161            <intent-filter>
-161-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Connor\.gradle\caches\transforms-3\3de9c3793a0f317c75ff9e447bc3b8c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+161-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\38cc985706b0ede9d2ab25d94ba55e0c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
 162                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-162-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Connor\.gradle\caches\transforms-3\3de9c3793a0f317c75ff9e447bc3b8c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
-162-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Connor\.gradle\caches\transforms-3\3de9c3793a0f317c75ff9e447bc3b8c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+162-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\38cc985706b0ede9d2ab25d94ba55e0c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+162-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\38cc985706b0ede9d2ab25d94ba55e0c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
 163            </intent-filter>
 164            <intent-filter>
-164-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Connor\.gradle\caches\transforms-3\3de9c3793a0f317c75ff9e447bc3b8c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+164-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\38cc985706b0ede9d2ab25d94ba55e0c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
 165                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-165-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Connor\.gradle\caches\transforms-3\3de9c3793a0f317c75ff9e447bc3b8c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
-165-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Connor\.gradle\caches\transforms-3\3de9c3793a0f317c75ff9e447bc3b8c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+165-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\38cc985706b0ede9d2ab25d94ba55e0c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+165-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\38cc985706b0ede9d2ab25d94ba55e0c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
 166            </intent-filter>
 167        </receiver> <!-- The activities will be merged into the manifest of the hosting app. -->
 168        <activity
-168-->[com.google.android.play:core:1.8.0] C:\Users\Connor\.gradle\caches\transforms-3\3e9fa0e49127e60fc68e8b0a5ea2df90\transformed\core-1.8.0\AndroidManifest.xml:12:5-271
+168-->[com.google.android.play:core:1.8.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\ed85fc4d41fe11bf9e77ef261e5e6629\transformed\core-1.8.0\AndroidManifest.xml:12:5-271
 169            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
-169-->[com.google.android.play:core:1.8.0] C:\Users\Connor\.gradle\caches\transforms-3\3e9fa0e49127e60fc68e8b0a5ea2df90\transformed\core-1.8.0\AndroidManifest.xml:12:15-102
+169-->[com.google.android.play:core:1.8.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\ed85fc4d41fe11bf9e77ef261e5e6629\transformed\core-1.8.0\AndroidManifest.xml:12:15-102
 170            android:enabled="false"
-170-->[com.google.android.play:core:1.8.0] C:\Users\Connor\.gradle\caches\transforms-3\3e9fa0e49127e60fc68e8b0a5ea2df90\transformed\core-1.8.0\AndroidManifest.xml:12:103-126
+170-->[com.google.android.play:core:1.8.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\ed85fc4d41fe11bf9e77ef261e5e6629\transformed\core-1.8.0\AndroidManifest.xml:12:103-126
 171            android:exported="false"
-171-->[com.google.android.play:core:1.8.0] C:\Users\Connor\.gradle\caches\transforms-3\3e9fa0e49127e60fc68e8b0a5ea2df90\transformed\core-1.8.0\AndroidManifest.xml:12:127-151
+171-->[com.google.android.play:core:1.8.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\ed85fc4d41fe11bf9e77ef261e5e6629\transformed\core-1.8.0\AndroidManifest.xml:12:127-151
 172            android:launchMode="singleInstance"
-172-->[com.google.android.play:core:1.8.0] C:\Users\Connor\.gradle\caches\transforms-3\3e9fa0e49127e60fc68e8b0a5ea2df90\transformed\core-1.8.0\AndroidManifest.xml:12:204-239
+172-->[com.google.android.play:core:1.8.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\ed85fc4d41fe11bf9e77ef261e5e6629\transformed\core-1.8.0\AndroidManifest.xml:12:204-239
 173            android:process=":playcore_missing_splits_activity"
-173-->[com.google.android.play:core:1.8.0] C:\Users\Connor\.gradle\caches\transforms-3\3e9fa0e49127e60fc68e8b0a5ea2df90\transformed\core-1.8.0\AndroidManifest.xml:12:152-203
+173-->[com.google.android.play:core:1.8.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\ed85fc4d41fe11bf9e77ef261e5e6629\transformed\core-1.8.0\AndroidManifest.xml:12:152-203
 174            android:stateNotNeeded="true" />
-174-->[com.google.android.play:core:1.8.0] C:\Users\Connor\.gradle\caches\transforms-3\3e9fa0e49127e60fc68e8b0a5ea2df90\transformed\core-1.8.0\AndroidManifest.xml:12:240-269
+174-->[com.google.android.play:core:1.8.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\ed85fc4d41fe11bf9e77ef261e5e6629\transformed\core-1.8.0\AndroidManifest.xml:12:240-269
 175        <activity
-175-->[com.google.android.play:core:1.8.0] C:\Users\Connor\.gradle\caches\transforms-3\3e9fa0e49127e60fc68e8b0a5ea2df90\transformed\core-1.8.0\AndroidManifest.xml:13:5-226
+175-->[com.google.android.play:core:1.8.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\ed85fc4d41fe11bf9e77ef261e5e6629\transformed\core-1.8.0\AndroidManifest.xml:13:5-226
 176            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
-176-->[com.google.android.play:core:1.8.0] C:\Users\Connor\.gradle\caches\transforms-3\3e9fa0e49127e60fc68e8b0a5ea2df90\transformed\core-1.8.0\AndroidManifest.xml:13:15-95
+176-->[com.google.android.play:core:1.8.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\ed85fc4d41fe11bf9e77ef261e5e6629\transformed\core-1.8.0\AndroidManifest.xml:13:15-95
 177            android:enabled="false"
-177-->[com.google.android.play:core:1.8.0] C:\Users\Connor\.gradle\caches\transforms-3\3e9fa0e49127e60fc68e8b0a5ea2df90\transformed\core-1.8.0\AndroidManifest.xml:13:96-119
+177-->[com.google.android.play:core:1.8.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\ed85fc4d41fe11bf9e77ef261e5e6629\transformed\core-1.8.0\AndroidManifest.xml:13:96-119
 178            android:exported="false"
-178-->[com.google.android.play:core:1.8.0] C:\Users\Connor\.gradle\caches\transforms-3\3e9fa0e49127e60fc68e8b0a5ea2df90\transformed\core-1.8.0\AndroidManifest.xml:13:120-144
+178-->[com.google.android.play:core:1.8.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\ed85fc4d41fe11bf9e77ef261e5e6629\transformed\core-1.8.0\AndroidManifest.xml:13:120-144
 179            android:stateNotNeeded="true"
-179-->[com.google.android.play:core:1.8.0] C:\Users\Connor\.gradle\caches\transforms-3\3e9fa0e49127e60fc68e8b0a5ea2df90\transformed\core-1.8.0\AndroidManifest.xml:13:145-174
+179-->[com.google.android.play:core:1.8.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\ed85fc4d41fe11bf9e77ef261e5e6629\transformed\core-1.8.0\AndroidManifest.xml:13:145-174
 180            android:theme="@style/Theme.PlayCore.Transparent" /> <!-- The service will be merged into the manifest of the hosting app. -->
-180-->[com.google.android.play:core:1.8.0] C:\Users\Connor\.gradle\caches\transforms-3\3e9fa0e49127e60fc68e8b0a5ea2df90\transformed\core-1.8.0\AndroidManifest.xml:13:175-224
+180-->[com.google.android.play:core:1.8.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\ed85fc4d41fe11bf9e77ef261e5e6629\transformed\core-1.8.0\AndroidManifest.xml:13:175-224
 181        <service
-181-->[com.google.android.play:core:1.8.0] C:\Users\Connor\.gradle\caches\transforms-3\3e9fa0e49127e60fc68e8b0a5ea2df90\transformed\core-1.8.0\AndroidManifest.xml:16:5-145
+181-->[com.google.android.play:core:1.8.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\ed85fc4d41fe11bf9e77ef261e5e6629\transformed\core-1.8.0\AndroidManifest.xml:16:5-145
 182            android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"
-182-->[com.google.android.play:core:1.8.0] C:\Users\Connor\.gradle\caches\transforms-3\3e9fa0e49127e60fc68e8b0a5ea2df90\transformed\core-1.8.0\AndroidManifest.xml:16:14-95
+182-->[com.google.android.play:core:1.8.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\ed85fc4d41fe11bf9e77ef261e5e6629\transformed\core-1.8.0\AndroidManifest.xml:16:14-95
 183            android:enabled="false"
-183-->[com.google.android.play:core:1.8.0] C:\Users\Connor\.gradle\caches\transforms-3\3e9fa0e49127e60fc68e8b0a5ea2df90\transformed\core-1.8.0\AndroidManifest.xml:16:96-119
+183-->[com.google.android.play:core:1.8.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\ed85fc4d41fe11bf9e77ef261e5e6629\transformed\core-1.8.0\AndroidManifest.xml:16:96-119
 184            android:exported="true" />
-184-->[com.google.android.play:core:1.8.0] C:\Users\Connor\.gradle\caches\transforms-3\3e9fa0e49127e60fc68e8b0a5ea2df90\transformed\core-1.8.0\AndroidManifest.xml:16:120-143
+184-->[com.google.android.play:core:1.8.0] C:\Users\tacotortilla\.gradle\caches\transforms-4\ed85fc4d41fe11bf9e77ef261e5e6629\transformed\core-1.8.0\AndroidManifest.xml:16:120-143
 185    </application>
 186
 187</manifest>

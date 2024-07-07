@@ -1,42 +1,42 @@
 [
     {
-        "merged": "C:\\Users\\Connor\\.gradle\\daemon\\8.4\\com.cgcworks.ppgpal.wear-debug-83:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Connor\\.gradle\\daemon\\8.4\\com.cgcworks.ppgpal.wear-main-85:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\tacotortilla\\.gradle\\daemon\\8.7\\com.cgcworks.ppgpal.wear-debug-83:\\xml_wearable_capability.xml.flat",
+        "source": "C:\\Users\\tacotortilla\\.gradle\\daemon\\8.7\\com.cgcworks.ppgpal.wear-main-85:\\xml\\wearable_capability.xml"
     },
     {
-        "merged": "C:\\Users\\Connor\\.gradle\\daemon\\8.4\\com.cgcworks.ppgpal.wear-debug-83:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Connor\\.gradle\\daemon\\8.4\\com.cgcworks.ppgpal.wear-main-85:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\tacotortilla\\.gradle\\daemon\\8.7\\com.cgcworks.ppgpal.wear-debug-83:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\tacotortilla\\.gradle\\daemon\\8.7\\com.cgcworks.ppgpal.wear-main-85:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Connor\\.gradle\\daemon\\8.4\\com.cgcworks.ppgpal.wear-debug-83:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Connor\\.gradle\\daemon\\8.4\\com.cgcworks.ppgpal.wear-main-85:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\tacotortilla\\.gradle\\daemon\\8.7\\com.cgcworks.ppgpal.wear-debug-83:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\tacotortilla\\.gradle\\daemon\\8.7\\com.cgcworks.ppgpal.wear-main-85:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Connor\\.gradle\\daemon\\8.4\\com.cgcworks.ppgpal.wear-debug-83:\\layout_dsds.xml.flat",
-        "source": "C:\\Users\\Connor\\.gradle\\daemon\\8.4\\com.cgcworks.ppgpal.wear-main-85:\\layout\\dsds.xml"
+        "merged": "C:\\Users\\tacotortilla\\.gradle\\daemon\\8.7\\com.cgcworks.ppgpal.wear-debug-83:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\tacotortilla\\.gradle\\daemon\\8.7\\com.cgcworks.ppgpal.wear-main-85:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Connor\\.gradle\\daemon\\8.4\\com.cgcworks.ppgpal.wear-debug-83:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Connor\\.gradle\\daemon\\8.4\\com.cgcworks.ppgpal.wear-main-85:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\tacotortilla\\.gradle\\daemon\\8.7\\com.cgcworks.ppgpal.wear-debug-83:\\drawable_tile_preview.png.flat",
+        "source": "C:\\Users\\tacotortilla\\.gradle\\daemon\\8.7\\com.cgcworks.ppgpal.wear-main-85:\\drawable\\tile_preview.png"
     },
     {
-        "merged": "C:\\Users\\Connor\\.gradle\\daemon\\8.4\\com.cgcworks.ppgpal.wear-debug-83:\\drawable-round_tile_preview.png.flat",
-        "source": "C:\\Users\\Connor\\.gradle\\daemon\\8.4\\com.cgcworks.ppgpal.wear-main-85:\\drawable-round\\tile_preview.png"
+        "merged": "C:\\Users\\tacotortilla\\.gradle\\daemon\\8.7\\com.cgcworks.ppgpal.wear-debug-83:\\layout_main.xml.flat",
+        "source": "C:\\Users\\tacotortilla\\.gradle\\daemon\\8.7\\com.cgcworks.ppgpal.wear-main-85:\\layout\\main.xml"
     },
     {
-        "merged": "C:\\Users\\Connor\\.gradle\\daemon\\8.4\\com.cgcworks.ppgpal.wear-debug-83:\\drawable_tile_preview.png.flat",
-        "source": "C:\\Users\\Connor\\.gradle\\daemon\\8.4\\com.cgcworks.ppgpal.wear-main-85:\\drawable\\tile_preview.png"
+        "merged": "C:\\Users\\tacotortilla\\.gradle\\daemon\\8.7\\com.cgcworks.ppgpal.wear-debug-83:\\drawable-round_tile_preview.png.flat",
+        "source": "C:\\Users\\tacotortilla\\.gradle\\daemon\\8.7\\com.cgcworks.ppgpal.wear-main-85:\\drawable-round\\tile_preview.png"
     },
     {
-        "merged": "C:\\Users\\Connor\\.gradle\\daemon\\8.4\\com.cgcworks.ppgpal.wear-debug-83:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Connor\\.gradle\\daemon\\8.4\\com.cgcworks.ppgpal.wear-main-85:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "com.cgcworks.ppgpal.wear-debug-83:/layout_main.xml.flat",
+        "source": "com.cgcworks.ppgpal.wear-main-85:/layout/main.xml"
     },
     {
-        "merged": "C:\\Users\\Connor\\.gradle\\daemon\\8.4\\com.cgcworks.ppgpal.wear-debug-83:\\layout_main.xml.flat",
-        "source": "C:\\Users\\Connor\\.gradle\\daemon\\8.4\\com.cgcworks.ppgpal.wear-main-85:\\layout\\main.xml"
+        "merged": "C:\\Users\\tacotortilla\\.gradle\\daemon\\8.7\\com.cgcworks.ppgpal.wear-debug-83:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\tacotortilla\\.gradle\\daemon\\8.7\\com.cgcworks.ppgpal.wear-main-85:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.cgcworks.ppgpal.wear-debug-83:/xml_wearable_capability.xml.flat",
-        "source": "com.cgcworks.ppgpal.wear-main-85:/xml/wearable_capability.xml"
+        "merged": "C:\\Users\\tacotortilla\\.gradle\\daemon\\8.7\\com.cgcworks.ppgpal.wear-debug-83:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\tacotortilla\\.gradle\\daemon\\8.7\\com.cgcworks.ppgpal.wear-main-85:\\mipmap-xhdpi\\ic_launcher.webp"
     }
 ]

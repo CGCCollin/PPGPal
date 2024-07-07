@@ -12,7 +12,8 @@
     <string name="tile_label">Example tile</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_presentation._main">presentation.MainActivity</string>
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
     </style>
 </resources>
