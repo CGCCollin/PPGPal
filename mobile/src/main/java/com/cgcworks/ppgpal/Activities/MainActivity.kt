@@ -70,12 +70,12 @@ class MainActivity : AppCompatActivity() {
 
         startButton.setOnClickListener {
             Log.i(TAG, "Start Button Clicked")
-            messaging("START")
+            messaging(START_CMD)
         }
 
         stopButton.setOnClickListener {
             Log.i(TAG, "Stop Button Clicked")
-            messaging("STOP")
+            messaging(STOP_CMD)
         }
 
         val view = binding.root
@@ -201,6 +201,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun messaging(message: String) {
+        if (!message.equals(START_CMD) && !message.equals(STOP_CMD)){
+            runOnUiThread{
+                Toast.makeText(this,"Invalid Message. Aborting Transmission.", Toast.LENGTH_SHORT)
+            }
+            return
+        }
         val currentTime = SystemClock.elapsedRealtime()
         if (currentTime - lastMessageSentTime >= MESSAGE_INTERVAL_MS) {
             watchNode.id?.also { nodeId ->
@@ -210,12 +216,23 @@ class MainActivity : AppCompatActivity() {
                     message.toByteArray()
                 ).apply {
                     addOnSuccessListener {
-                        runOnUiThread {
-                            Toast.makeText(
-                                this@MainActivity,
-                                "Sent Start Signal",
-                                Toast.LENGTH_SHORT
-                            ).show()
+                        if (message.equals(START_CMD)) {
+                            runOnUiThread {
+                                Toast.makeText(
+                                    this@MainActivity,
+                                    "Sent Start Signal",
+                                    Toast.LENGTH_SHORT
+                                ).show()
+                            }
+                        }
+                        else if (message.equals(STOP_CMD)){
+                            runOnUiThread {
+                                Toast.makeText(
+                                    this@MainActivity,
+                                    "Sent Stop Signal",
+                                    Toast.LENGTH_SHORT
+                                ).show()
+                            }
                         }
                         Log.i(TAG, "Message sent successfully")
                     }
@@ -223,7 +240,7 @@ class MainActivity : AppCompatActivity() {
                         runOnUiThread {
                             Toast.makeText(
                                 this@MainActivity,
-                                "Sent Stop Signal",
+                                "Failed to send message.",
                                 Toast.LENGTH_SHORT
                             ).show()
                         }
@@ -313,6 +330,8 @@ class MainActivity : AppCompatActivity() {
         private const val PPG_GREEN_PATH = "/PPG_GREEN"
         private const val PPG_RED_PATH = "/PPG_RED"
         private const val ACCEL_PATH = "/ACCELEROMETER"
+        private const val START_CMD = "START"
+        private const val STOP_CMD = "STOP"
         const val PPG_RED_BROADCAST = "com.cgcworks.ppgpal.PPG_RED_BROADCAST"
         const val PPG_GREEN_BROADCAST = "com.cgcworks.ppgpal.PPG_GREEN_BROADCAST"
         const val ACCEL_BROADCAST = "com.cgcworks.ppgpal.ACCEL_BROADCAST"
