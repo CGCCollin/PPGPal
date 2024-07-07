@@ -20,32 +20,39 @@ import java.io.File
 class PPGListenerService: WearableListenerService() {
 
 
-    override fun onMessageReceived(messageEvent: MessageEvent) {
-        Log.d(Companion.TAG, "onMessageReceived(): $messageEvent")
-        Log.d(Companion.TAG, String(messageEvent.data))
-        if(messageEvent.path == PPG_RED_PATH){
-            val ppgRed = String(messageEvent.data)
-            GlobalScope.launch(Dispatchers.IO) {
-                writeJson("PPGRed", jsonifyPPGRed(ppgRed), ppgRedWrites++)
-            }
 
-        }
-        else if(messageEvent.path == PPG_GREEN_PATH){
-            val ppgGreen = String(messageEvent.data)
-            GlobalScope.launch(Dispatchers.IO) {
-                writeJson("PPGGreen", jsonifyPPGGreen(ppgGreen), ppgGreenWrites++)
+    private fun broadcastData(action: String, data: String) {
+        val intent = Intent(action)
+        intent.putExtra("data", data)
+        sendBroadcast(intent)
+    }
+
+    override fun onMessageReceived(messageEvent: MessageEvent) {
+        Log.d(TAG, "onMessageReceived(): $messageEvent")
+        val data = String(messageEvent.data)
+        when (messageEvent.path) {
+            PPG_RED_PATH -> {
+                GlobalScope.launch(Dispatchers.IO) {
+                    writeJson("PPGRed", jsonifyPPGRed(data), ppgRedWrites++)
+                }
+                broadcastData(PPG_RED_BROADCAST, data)
             }
-        }
-        else if (messageEvent.path == ACCEL_PATH){
-            val accel = String(messageEvent.data)
-            GlobalScope.launch(Dispatchers.IO) {
-                writeJson("Accelerometer", jsonifyAccelerometer(accel), accelWrites++)
+            PPG_GREEN_PATH -> {
+                GlobalScope.launch(Dispatchers.IO) {
+                    writeJson("PPGGreen", jsonifyPPGGreen(data), ppgGreenWrites++)
+                }
+                broadcastData(PPG_GREEN_BROADCAST, data)
             }
-        }
-        else{
-            Log.e(TAG, "Unknown message path: ${messageEvent.path}")
+            ACCEL_PATH -> {
+                GlobalScope.launch(Dispatchers.IO) {
+                    writeJson("Accelerometer", jsonifyAccelerometer(data), accelWrites++)
+                }
+                broadcastData(ACCEL_BROADCAST, data)
+            }
+            else -> Log.e(TAG, "Unknown message path: ${messageEvent.path}")
         }
     }
+
     fun jsonifyPPGGreen(input: String): String {
         val jsonArray = JSONArray()
         val objects = input.split(";")
@@ -139,6 +146,9 @@ class PPGListenerService: WearableListenerService() {
         private const val PPG_GREEN_PATH = "/PPG_GREEN"
         private const val PPG_RED_PATH = "/PPG_RED"
         private const val ACCEL_PATH = "/ACCELEROMETER"
+        const val PPG_RED_BROADCAST = "com.cgcworks.ppgpal.PPG_RED_BROADCAST"
+        const val PPG_GREEN_BROADCAST = "com.cgcworks.ppgpal.PPG_GREEN_BROADCAST"
+        const val ACCEL_BROADCAST = "com.cgcworks.ppgpal.ACCEL_BROADCAST"
         private var ppgGreenWrites = 0
         private var ppgRedWrites = 0
         private var accelWrites = 0

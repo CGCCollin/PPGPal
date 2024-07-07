@@ -1,8 +1,10 @@
 package com.cgcworks.ppgpal.Activities
 
 import android.app.Activity
+import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
+import android.content.IntentFilter
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
@@ -34,10 +36,14 @@ import kotlinx.coroutines.launch
 import org.json.JSONArray
 import java.io.File
 
+import com.cgcworks.ppgpal.Receiver.*
+
+
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var ppgRedLabel: TextView
     private lateinit var ppgGreenLabel: TextView
+    private lateinit var accelerometerLabel: TextView
     private lateinit var startButton: Button
     private lateinit var stopButton: Button
     private lateinit var perms: ArrayList<String>
@@ -45,6 +51,13 @@ class MainActivity : AppCompatActivity() {
     private val PERMISSION_REQ_TAG = 1
     private lateinit var watchNode: Node
 
+    private lateinit var ppgRedReceiver: PPGRedReceiver
+    private lateinit var ppgGreenReceiver: PPGGreenReceiver
+    private lateinit var accelReceiver: AccelReceiver
+
+    private var ppgRedValues = mutableListOf<Int>()
+    private var ppgGreenValues = mutableListOf<Int>()
+    private var accelValues = mutableListOf<Triple<Int, Int, Int>>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -61,6 +74,8 @@ class MainActivity : AppCompatActivity() {
         //initialize view elements
         ppgRedLabel = binding.ppgRed
         ppgGreenLabel = binding.ppgGreen
+        accelerometerLabel  = binding.accelerometer
+
         startButton = binding.startPpg
         stopButton = binding.stopPpg
 
@@ -79,6 +94,44 @@ class MainActivity : AppCompatActivity() {
         checkPermissions(this,perms.toTypedArray())
         getWriteExternalStoargePerms()
         setupHealthTrackingNodes()
+
+        ppgRedReceiver = object : PPGRedReceiver() {
+            override fun onReceive(context: Context, intent: Intent) {
+                Log.i(TAG, "PPG RED RECEIVER HIT")
+                val data = intent.getStringExtra("data")
+                data?.let {
+                    updatePPGRedData(it)
+                }
+            }
+        }
+
+        ppgGreenReceiver = object : PPGGreenReceiver() {
+
+            override fun onReceive(context: Context, intent: Intent) {
+                Log.i(TAG, "PPG GREEN RECEIVER HIT")
+                val data = intent.getStringExtra("data")
+                data?.let {
+                    updatePPGGreenData(it)
+                }
+            }
+        }
+
+        accelReceiver = object : AccelReceiver() {
+            override fun onReceive(context: Context, intent: Intent) {
+                Log.i(TAG, "ACCELEROMETER RECEIVER HIT")
+                val data = intent.getStringExtra("data")
+                data?.let {
+                    updateAccelData(it)
+                }
+            }
+        }
+
+
+        // Register receivers for new broadcast actions
+        registerReceiver(ppgRedReceiver, IntentFilter(PPG_RED_BROADCAST), Context.RECEIVER_NOT_EXPORTED)
+        registerReceiver(ppgGreenReceiver, IntentFilter(PPG_GREEN_BROADCAST), Context.RECEIVER_NOT_EXPORTED)
+        registerReceiver(accelReceiver, IntentFilter(ACCEL_BROADCAST), Context.RECEIVER_NOT_EXPORTED)
+
     }
 
     fun requestPermission(){
@@ -220,6 +273,40 @@ class MainActivity : AppCompatActivity() {
         watchNode = node
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        unregisterReceiver(ppgRedReceiver)
+        unregisterReceiver(ppgGreenReceiver)
+        unregisterReceiver(accelReceiver)
+    }
+
+    fun updatePPGRedData(data: String) {
+        val values = data.split(";").map { it.split(",")[1].toInt() }
+        ppgRedValues.addAll(values)
+        val average = ppgRedValues.average()
+        ppgRedLabel.text = "PPG Red Avg: $average"
+    }
+
+    fun updatePPGGreenData(data: String) {
+
+        val values = data.split(";").map { it.split(",")[1].toInt() }
+        ppgGreenValues.addAll(values)
+        val average = ppgGreenValues.average()
+        ppgGreenLabel.text = "PPG Green Avg: $average"
+    }
+
+    fun updateAccelData(data: String) {
+        val values = data.split(";").map {
+            val parts = it.split(",")
+            Triple(parts[1].toInt(), parts[2].toInt(), parts[3].toInt())
+        }
+        accelValues.addAll(values)
+        val avgX = accelValues.map { it.first }.average()
+        val avgY = accelValues.map { it.second }.average()
+        val avgZ = accelValues.map { it.third }.average()
+        accelerometerLabel.text = "Accelerometer: x: $avgX, y: $avgY, z: $avgZ"
+    }
+
 
 
     companion object {
@@ -228,6 +315,9 @@ class MainActivity : AppCompatActivity() {
         private const val PPG_GREEN_PATH = "/PPG_GREEN"
         private const val PPG_RED_PATH = "/PPG_RED"
         private const val ACCEL_PATH = "/ACCELEROMETER"
+        const val PPG_RED_BROADCAST = "com.cgcworks.ppgpal.PPG_RED_BROADCAST"
+        const val PPG_GREEN_BROADCAST = "com.cgcworks.ppgpal.PPG_GREEN_BROADCAST"
+        const val ACCEL_BROADCAST = "com.cgcworks.ppgpal.ACCEL_BROADCAST"
 
     }
 

@@ -48,6 +48,28 @@
             </intent-filter>
         </activity>
 
+        <receiver
+            android:name="com.cgcworks.ppgpal.Receiver.PPGRedReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.cgcworks.ppgpal.PPG_RED_PATH" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.cgcworks.ppgpal.Receiver.PPGGreenReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.cgcworks.ppgpal.PPG_GREEN_PATH" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.cgcworks.ppgpal.Receiver.AccelReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.cgcworks.ppgpal.ACCEL_PATH" />
+            </intent-filter>
+        </receiver>
+
         <service
             android:name="com.cgcworks.ppgpal.Services.PPGListenerService"
             android:enabled="true"
@@ -61,15 +83,6 @@
                     android:scheme="wear" />
             </intent-filter>
         </service>
-
-        <activity
-            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-            android:exported="false"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"
@@ -85,6 +98,15 @@
                 android:name="androidx.profileinstaller.ProfileInstallerInitializer"
                 android:value="androidx.startup" />
         </provider>
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
 
         <receiver
             android:name="androidx.profileinstaller.ProfileInstallReceiver"

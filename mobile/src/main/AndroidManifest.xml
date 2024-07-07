@@ -29,6 +29,24 @@
             </intent-filter>
         </activity>
 
+        <receiver android:name="com.cgcworks.ppgpal.Receiver.PPGRedReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.cgcworks.ppgpal.PPG_RED_PATH" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.cgcworks.ppgpal.Receiver.PPGGreenReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.cgcworks.ppgpal.PPG_GREEN_PATH" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.cgcworks.ppgpal.Receiver.AccelReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.cgcworks.ppgpal.ACCEL_PATH" />
+            </intent-filter>
+        </receiver>
+
         <service
             android:name=".Services.PPGListenerService"
             android:enabled="true"

@@ -1,11 +1,12 @@
-#Thu Apr 11 21:37:34 EDT 2024
-base.0=C\:\\Users\\Connor\\Documents\\coding\\Android\\PPGPal\\mobile\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\Users\\Connor\\Documents\\coding\\Android\\PPGPal\\mobile\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=C\:\\Users\\Connor\\Documents\\coding\\Android\\PPGPal\\mobile\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
-base.3=C\:\\Users\\Connor\\Documents\\coding\\Android\\PPGPal\\mobile\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
-base.4=C\:\\Users\\Connor\\Documents\\coding\\Android\\PPGPal\\mobile\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
-base.5=C\:\\Users\\Connor\\Documents\\coding\\Android\\PPGPal\\mobile\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
-base.6=C\:\\Users\\Connor\\Documents\\coding\\Android\\PPGPal\\mobile\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+#Sun Jul 07 15:56:51 EDT 2024
+base.0=C\:\\Users\\tacotortilla\\CodeVolume\\Android\\PPGPalTrue\\mobile\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\tacotortilla\\CodeVolume\\Android\\PPGPalTrue\\mobile\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\tacotortilla\\CodeVolume\\Android\\PPGPalTrue\\mobile\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
+base.3=C\:\\Users\\tacotortilla\\CodeVolume\\Android\\PPGPalTrue\\mobile\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
+base.4=C\:\\Users\\tacotortilla\\CodeVolume\\Android\\PPGPalTrue\\mobile\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
+base.5=C\:\\Users\\tacotortilla\\CodeVolume\\Android\\PPGPalTrue\\mobile\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
+base.6=C\:\\Users\\tacotortilla\\CodeVolume\\Android\\PPGPalTrue\\mobile\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.7=C\:\\Users\\tacotortilla\\CodeVolume\\Android\\PPGPalTrue\\mobile\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=10/classes.dex
@@ -13,6 +14,7 @@ path.3=1/classes.dex
 path.4=3/classes.dex
 path.5=5/classes.dex
 path.6=classes2.dex
+path.7=4/classes.dex
 renamed.0=classes.dex
 renamed.1=classes2.dex
 renamed.2=classes3.dex
@@ -20,3 +22,4 @@ renamed.3=classes4.dex
 renamed.4=classes5.dex
 renamed.5=classes6.dex
 renamed.6=classes7.dex
+renamed.7=classes8.dex
